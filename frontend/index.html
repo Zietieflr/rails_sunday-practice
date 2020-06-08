@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beer Practice</title>
+  <script src="index.js" defer ></script>
+</head>
+<body>
+  <header>
+    <h1>Choose your brewery:</h1>
+  </header>
+  <main id="brewery-card">
+    <div id="create-beer">
+      <form method="POST" action="http://localhost:3000/beers">
+        <label for="name">Name</label>
+          <input type="text" id="name" name="name"> 
+        <label for="abv">ABV</label>
+          <input id="abv" name="abv">
+        <label>Type of Beer</label>
+          <input name="type_of_beer">
+        <label for="dropdown">Brewery</label>
+          <select id="dropdown" name="brewery_id"></select>
+        <input type="submit" value="Add Beer">
+      </form>
+    </div>
+  </main>
+</body>
+</html>
